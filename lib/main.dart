@@ -1,3 +1,4 @@
+import 'package:coffe_app/modules/onboarding/views/onboarding_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-    
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: 
+      debugShowCheckedModeBanner: false,
+      home: OnboardingView(),
     );
   }
 }
